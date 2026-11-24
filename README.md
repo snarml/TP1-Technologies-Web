@@ -39,7 +39,7 @@ TP1/
 └── pom.xml                        # optionnel (import Maven)
 ```
 
-## Déploiement manuel (sans IDE)
+## Déploiement manuel 
 
 1. Copier `deploiement-manuel\TP1Manuel` dans `%CATALINA_HOME%\webapps\`.
 2. Créer le dossier `%CATALINA_HOME%\webapps\TP1Manuel\WEB-INF\classes`.
@@ -48,14 +48,7 @@ TP1/
 4. Démarrer Tomcat : `"%CATALINA_HOME%\bin\startup.bat"`
 5. Tester : http://localhost:8080/TP1Manuel/ puis http://localhost:8080/TP1Manuel/hello
 
-> Si Tomcat est installé dans `C:\Program Files`, il faut ouvrir CMD **en administrateur** pour écrire dans `webapps`.
 
-## Dans l'IDE
-
-- **Eclipse** : créer un *Dynamic Web Project* `TP1` (Target runtime : Apache Tomcat v9.0), puis copier
-  `src/main/java` et `src/main/webapp` dans le projet. Autre possibilité : *File > Import > Existing Maven Projects*.
-- **IntelliJ IDEA** : ouvrir le dossier (Maven), puis *Run > Edit Configurations > Tomcat Server > Local*,
-  et dans l'onglet Deployment ajouter `TP1:war exploded` avec le contexte `/TP1`.
 
 ## URLs de test (contexte `/TP1`)
 
@@ -71,19 +64,5 @@ TP1/
 | 1.4.1 | `/login.html`, `/ListItems`, `/Logout` |
 | 1.4.2 | `/AttributeTest`, `/AttributeTest?session=replace`, `/AttributeTest?session=remove` |
 
-## Enregistrement des composants (une seule méthode par composant)
 
-| Composant | Méthode |
-|---|---|
-| Servlets | `@WebServlet` |
-| LoggingFilter, SecurityFilter | `web.xml` (l'ordre des `<filter-mapping>` donne l'ordre d'exécution) |
-| ApplicationListener | `web.xml` (`<listener>`) |
-| Autres listeners | `@WebListener` |
 
-## À compléter (extras)
-
-- [ ] `VisitCounter` : compteur de visites par cookie (1.2.4)
-- [ ] `ShowSession` : nombre de jours jusqu'à l'anniversaire (1.3.1 extra)
-- [ ] `ListItems` : nombre de saisies de chaque item (1.3.2 extra)
-- [ ] `LoggingFilter` : temps d'exécution avec `System.nanoTime()`
-- [ ] `LoginServlet` : stocker un `SessionUser` (1.4.3)
