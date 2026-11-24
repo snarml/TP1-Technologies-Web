@@ -1,0 +1,22 @@
+# Fichiers compilés
+*.class
+*.war
+target/
+build/
+bin/
+out/
+
+# Eclipse
+.metadata/
+.settings/
+.classpath
+.project
+Servers/
+
+# IntelliJ
+.idea/
+*.iml
+
+# Système
+Thumbs.db
+.DS_Store

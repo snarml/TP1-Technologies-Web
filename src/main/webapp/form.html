@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulaire - FormServlet</title>
+</head>
+<body>
+    <h1>1.1 Formulaire (POST vers FormServlet)</h1>
+
+    <!-- Tester aussi action="Form_Servlet" : les deux URLs mènent à la même servlet -->
+    <form action="FormServlet" method="POST">
+        Prénom : <input type="text" name="firstName" required><br>
+        Nom : <input type="text" name="lastName" required><br>
+        Date de naissance : <input type="text" name="birthDay" placeholder="mm/dd/yyyy"
+                                   pattern="\d{2}/\d{2}/\d{4}" required><br>
+        <!-- 1.1.2 : boutons radio pour le sexe -->
+        Sexe :
+        <input type="radio" name="sex" value="Homme" id="h" required><label for="h">Homme</label>
+        <input type="radio" name="sex" value="Femme" id="f"><label for="f">Femme</label><br>
+        <input type="submit" value="Envoyer">
+    </form>
+
+    <!-- 1.2.3 : lien vers ReadCookie (requête GET) -->
+    <p><a href="ReadCookie">Lire les cookies (ReadCookie)</a></p>
+    <p><a href="index.html">Retour à l'accueil</a></p>
+</body>
+</html>

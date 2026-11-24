@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>TP1 - Web Technologies</title>
+</head>
+<body>
+    <h1>TP1 - Web Technologies</h1>
+
+    <!-- 3.4 : formulaire de l'application MVC (envoyé au Controller) -->
+    <h2>3. Application MVC</h2>
+    <form action="Controller" method="POST">
+        Prénom : <input type="text" name="firstName" required><br>
+        Nom : <input type="text" name="lastName" required><br>
+        Date de naissance : <input type="text" name="birthDay" placeholder="mm/dd/yyyy"
+                                   pattern="\d{2}/\d{2}/\d{4}" required><br>
+        Sexe :
+        <input type="radio" name="sex" value="Homme" id="mvcH" required><label for="mvcH">Homme</label>
+        <input type="radio" name="sex" value="Femme" id="mvcF"><label for="mvcF">Femme</label><br>
+        <input type="submit" value="Envoyer au contrôleur">
+    </form>
+
+    <h2>Navigation dans le TP</h2>
+    <h3>1. Servlets</h3>
+    <ul>
+        <li><a href="form.html">1.1 / 1.2 : Formulaire envoyé à FormServlet (et cookies)</a></li>
+        <li><a href="ReadCookie">1.2.3 : ReadCookie</a></li>
+        <li><a href="VisitCounter">1.2.4 : Compteur de visites par cookie (extra)</a></li>
+        <li><a href="ShowSession">1.3.1 : ShowSession</a></li>
+        <li><a href="items.html">1.3.2 : Items (ListItems), protégé par SecurityFilter</a></li>
+    </ul>
+    <h3>2. JSP</h3>
+    <ul>
+        <li><a href="expression.jsp">expression.jsp</a></li>
+        <li><a href="scriptlet.jsp">scriptlet.jsp</a></li>
+        <li><a href="declaration.jsp">declaration.jsp</a></li>
+        <li><a href="form-jsp.html">form-jsp.html envoyé à bean.jsp</a></li>
+    </ul>
+    <h3>1.4 Filtres et Listeners</h3>
+    <ul>
+        <li><a href="login.html">login.html (LoginServlet)</a></li>
+        <li><a href="AttributeTest">AttributeTest : attributs d'application et de requête</a></li>
+        <li><a href="Logout">Logout : session.invalidate()</a></li>
+    </ul>
+</body>
+</html>

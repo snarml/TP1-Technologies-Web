@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulaire - bean.jsp</title>
+</head>
+<body>
+    <h1>2.2 Formulaire envoyé à bean.jsp</h1>
+    <!-- Les "name" sont identiques aux propriétés du bean isep.lab1.bean.Person -->
+    <form action="bean.jsp" method="POST">
+        Prénom : <input type="text" name="firstName" required><br>
+        Nom : <input type="text" name="lastName" required><br>
+        Date de naissance : <input type="text" name="birthDay" placeholder="mm/dd/yyyy"
+                                   pattern="\d{2}/\d{2}/\d{4}" required><br>
+        Sexe :
+        <input type="radio" name="sex" value="Homme" id="h" required><label for="h">Homme</label>
+        <input type="radio" name="sex" value="Femme" id="f"><label for="f">Femme</label><br>
+        <input type="submit" value="Envoyer">
+    </form>
+    <p><a href="index.html">Retour à l'accueil</a></p>
+</body>
+</html>
