@@ -8,8 +8,8 @@ MP2-GL, ISIMM, 2026-2027
 |---|---|
 | JDK | 17.0.13 |
 | Apache Tomcat | 9.0.96 (API `javax.servlet`) |
-| IDE | *à compléter (Eclipse / IntelliJ + version)* |
-| Navigateur | *à compléter* |
+
+
 
 ## Structure
 
